@@ -11,8 +11,7 @@ import javax.persistence.*;
 public class TestEntity {
 
   @Id
-  @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
-  @GenericGenerator(name = "native", strategy = "native")
+  @GeneratedValue(strategy= GenerationType.IDENTITY)
   Long id;
 
   String email;
